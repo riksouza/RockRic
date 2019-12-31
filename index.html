@@ -9,14 +9,16 @@
     
     <figure style="margin-top: 100px; text-align: center
     ;" >
-      <img src="img/irockRickRaiva.svg" alt="irocRic">
+      <img src="img/irockRickRaiva.svg" alt="irocRic" onclick="userName();">
       <figcaption>Fig1. - IrocRic.</figcaption>
     </figure>
     
     <script>
-      let name = prompt("Digite seu nome: ");
-        alert(`olá, ${name}!`);
-         
+      const clickRock = () => {
+        let userName = prompt(`Qual seu nome?: `);
+        return alert(`Prazer em conhecer você, ${userName}!`);
+        
+      }
     </script>
   </body>
 </html>
