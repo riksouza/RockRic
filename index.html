@@ -7,17 +7,16 @@
     </head>
   <body onload="alert(`olá sou a Rocha de estimação`);">
     
-    <figure style="margin-top: 100px; text-align: center
+    <figure  style="margin-top: 100px; text-align: center
     ;" >
-      <img src="img/irockRickRaiva.svg" alt="irocRic" onclick="clickRock();">
-      <figcaption>Fig1. - IrocRic.</figcaption>
+      <img id="rockImg" src="img/irockRickRaiva.svg" alt="irocRic"  onclick="clickRock();">
     </figure>
     
     <script>
       const clickRock = () => {
+        document.getElementById('rockImg').src="img/irickRicFeliz.svg";
         let userName = prompt(`Qual seu nome?: `);
         return alert(`Prazer em conhecer você, ${userName}!`);
-        
       }
     </script>
   </body>
